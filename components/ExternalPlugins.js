@@ -532,7 +532,7 @@ const DifyChatbot = dynamic(() => import('@/components/DifyChatbot'), {
 })
 const Analytics = dynamic(
   () =>
-    import('@vercel/analytics/react').then(m => {
+    import('@vercel/analytics/next').then(m => {
       return m.Analytics
     }),
   { ssr: false }
